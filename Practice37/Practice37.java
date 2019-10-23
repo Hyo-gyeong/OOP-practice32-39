@@ -1,4 +1,4 @@
-//ÄÄÇ»ÅÍÇĞ°ú 20190975 ½ÅÈ¿°æ
+//ì»´í“¨í„°í•™ê³¼ 20190975 ì‹ íš¨ê²½
 import java.util.Scanner;
 public class Practice37 {
 
@@ -9,58 +9,58 @@ public class Practice37 {
 		Movie m1 = new Movie();
 		Movie m2 = new Movie();
 
-		System.out.println("¿µÈ­Á¤º¸¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
-		System.out.print("¿µÈ­ Á¦¸ñÀº?");
+		System.out.println("ì˜í™”ì •ë³´ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
+		System.out.print("ì˜í™” ì œëª©ì€?");
 		m1.title = input.next();
-		System.out.print("ÆòÁ¡Àº?");
+		System.out.print("í‰ì ì€?");
 		m1.score = input.nextInt();
-		System.out.print("°¨µ¶Àº?");
+		System.out.print("ê°ë…ì€?");
 		m1.director = input.next();
-		System.out.print("°³ºÀ ³âµµ´Â?");
+		System.out.print("ê°œë´‰ ë…„ë„ëŠ”?");
 		m1.year = input.nextInt();
 		
 		System.out.println();
 		
-		System.out.println("¿µÈ­Á¤º¸¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
-		System.out.print("¿µÈ­ Á¦¸ñÀº?");
+		System.out.println("ì˜í™”ì •ë³´ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
+		System.out.print("ì˜í™” ì œëª©ì€?");
 		m2.title = input.next();
-		System.out.print("ÆòÁ¡Àº?");
+		System.out.print("í‰ì ì€?");
 		m2.score = input.nextInt();
-		System.out.print("°¨µ¶Àº?");
+		System.out.print("ê°ë…ì€?");
 		m2.director = input.next();
-		System.out.print("°³ºÀ ³âµµ´Â?");
+		System.out.print("ê°œë´‰ ë…„ë„ëŠ”?");
 		m2.year = input.nextInt();
 		
-		System.out.println("ÀÔ·ÂÇÑ ¿µÈ­Á¤º¸ÀÔ´Ï´Ù.");
-		System.out.println("Á¦¸ñ: "+m1.title);
-		System.out.println("ÆòÁ¡: "+m1.score+"Á¡");
-		System.out.println("°¨µ¶: "+m1.director);
-		System.out.println("°³ºÀ³âµµ: "+m1.year+"³â\n");
+		System.out.println("ì…ë ¥í•œ ì˜í™”ì •ë³´ì…ë‹ˆë‹¤.");
+		System.out.println("ì œëª©: "+m1.title);
+		System.out.println("í‰ì : "+m1.score+"ì ");
+		System.out.println("ê°ë…: "+m1.director);
+		System.out.println("ê°œë´‰ë…„ë„: "+m1.year+"ë…„\n");
 		
-		System.out.println("ÀÔ·ÂÇÑ ¿µÈ­Á¤º¸ÀÔ´Ï´Ù.");
-		System.out.println("Á¦¸ñ: "+m2.title);
-		System.out.println("ÆòÁ¡: "+m2.score+"Á¡");
-		System.out.println("°¨µ¶: "+m2.director);
-		System.out.println("°³ºÀ³âµµ: "+m2.year+"³â");
+		System.out.println("ì…ë ¥í•œ ì˜í™”ì •ë³´ì…ë‹ˆë‹¤.");
+		System.out.println("ì œëª©: "+m2.title);
+		System.out.println("í‰ì : "+m2.score+"ì ");
+		System.out.println("ê°ë…: "+m2.director);
+		System.out.println("ê°œë´‰ë…„ë„: "+m2.year+"ë…„");
 		
 		if (m1.score > m2.score) {
-			System.out.println("¿µÈ­ "+m1.title+"ÀÌ ¿µÈ­ "+m2.title+"º¸´Ù ÆòÁ¡ÀÌ ´õ ³ô½À´Ï´Ù.");
+			System.out.println("ì˜í™” "+m1.title+"ì´ ì˜í™” "+m2.title+"ë³´ë‹¤ í‰ì ì´ ë” ë†’ìŠµë‹ˆë‹¤.");
 		}
 		else if (m1.score < m2.score) {
-			System.out.println("¿µÈ­ "+m1.title+"ÀÌ ¿µÈ­ "+m2.title+"º¸´Ù ÆòÁ¡ÀÌ ´õ ³·½À´Ï´Ù.");
+			System.out.println("ì˜í™” "+m1.title+"ì´ ì˜í™” "+m2.title+"ë³´ë‹¤ í‰ì ì´ ë” ë‚®ìŠµë‹ˆë‹¤.");
 		}
 		else {
-			System.out.println("¿µÈ­ "+m1.title+"ÀÌ ¿µÈ­ "+m2.title+"º¸´Ù ÆòÁ¡ÀÌ °°½À´Ï´Ù.");
+			System.out.println("ì˜í™” "+m1.title+"ì´ ì˜í™” "+m2.title+"ì™€ í‰ì ì´ ê°™ìŠµë‹ˆë‹¤.");//detail
 		}
 		
 		if (m1.year > m2.year) {
-			System.out.println("¿µÈ­ "+m1.title+"ÀÌ ¿µÈ­ "+m2.title+"º¸´Ù ³ªÁß¿¡ °³ºÀµÇ¾ú½À´Ï´Ù..");
+			System.out.println("ì˜í™” "+m1.title+"ì´ ì˜í™” "+m2.title+"ë³´ë‹¤ ë‚˜ì¤‘ì— ê°œë´‰ë˜ì—ˆìŠµë‹ˆë‹¤..");
 		}
 		else if (m1.year < m2.year) {
-			System.out.println("¿µÈ­ "+m1.title+"ÀÌ ¿µÈ­ "+m2.title+"º¸´Ù ¸ÕÀú °³ºÀµÇ¾ú½À´Ï´Ù.");
+			System.out.println("ì˜í™” "+m1.title+"ì´ ì˜í™” "+m2.title+"ë³´ë‹¤ ë¨¼ì € ê°œë´‰ë˜ì—ˆìŠµë‹ˆë‹¤.");
 		}
 		else {
-			System.out.println("¿µÈ­ "+m1.title+"ÀÌ ¿µÈ­ "+m2.title+"¿Í °°Àº ³âµµ¿¡ °³ºÀµÇ¾ú½À´Ï´Ù.");
+			System.out.println("ì˜í™” "+m1.title+"ì´ ì˜í™” "+m2.title+"ì™€ ê°™ì€ ë…„ë„ì— ê°œë´‰ë˜ì—ˆìŠµë‹ˆë‹¤.");
 		}
 		
 		input.close();
